@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dashboard — Pivot Money</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="logo" href="index.html"><span class="dot"></span> Pivot</a>
+    <nav class="nav">
+      <a href="dashboard.html" class="active">◐ Dashboard</a>
+      <a href="advice.html">✦ Advice</a>
+      <a href="family.html">♡ Family & Goals</a>
+      <a href="security.html">⚿ Security</a>
+      <a href="#">⚙ Settings</a>
+    </nav>
+    <div class="side-foot">Logged in as Jordan L.<br/>Last sync · 2 min ago</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1>Good afternoon, Jordan 👋</h1>
+        <div class="sub">Here's the one thing worth your attention today.</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <input class="search" placeholder="Search transactions, goals…"/>
+        <div class="avatar">JL</div>
+      </div>
+    </div>
+
+    <!-- Hero advice -->
+    <div class="card" style="background:linear-gradient(135deg,#0F172A,#1e293b);color:#fff;border:0;margin-bottom:24px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap">
+        <div style="max-width:560px">
+          <span class="pill" style="background:rgba(59,130,246,.2);color:#93c5fd">Today's focus</span>
+          <h2 style="font-size:24px;margin:12px 0 8px;letter-spacing:-.02em">You have $4,200 sitting in checking. Moving $3,000 to your high-yield account would earn you ~$132/yr.</h2>
+          <p style="color:#cbd5e1;margin:0 0 18px;font-size:14px">It's safe, FDIC-insured, and you can pull it back in one tap. We checked — your bills won't be affected.</p>
+          <div style="display:flex;gap:10px">
+            <a class="btn brand" href="#">Move $3,000 →</a>
+            <a class="btn ghost" style="color:#cbd5e1" href="#">Not now</a>
+          </div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:12px;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em">Net worth</div>
+          <div style="font-size:36px;font-weight:600;margin-top:6px;letter-spacing:-.02em">$248,420</div>
+          <span class="pill good mt-8">+ 1.3% this month</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="grid cols-4" style="margin-bottom:24px">
+      <div class="card kpi">
+        <div class="label">Cash</div>
+        <div class="val">$18,240</div>
+        <span class="pill">Available now</span>
+      </div>
+      <div class="card kpi">
+        <div class="label">Investments</div>
+        <div class="val">$184,930</div>
+        <span class="delta">▲ $2,180</span>
+      </div>
+      <div class="card kpi">
+        <div class="label">Retirement</div>
+        <div class="val">$41,250</div>
+        <span class="delta">▲ $580</span>
+      </div>
+      <div class="card kpi">
+        <div class="label">Debt</div>
+        <div class="val">$4,000</div>
+        <span class="delta neg">▼ $200 paid</span>
+      </div>
+    </div>
+
+    <div class="grid cols-2">
+      <!-- Chart -->
+      <div class="card">
+        <div class="flex-between">
+          <div>
+            <h3>How you're growing</h3>
+            <span class="small muted">Last 6 months</span>
+          </div>
+          <div style="display:flex;gap:6px">
+            <span class="pill brand">6M</span>
+            <span class="pill">1Y</span>
+            <span class="pill">All</span>
+          </div>
+        </div>
+        <div class="bars">
+          <div class="bar" style="height:42%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:48%"></div>
+          <div class="bar" style="height:68%"></div>
+          <div class="bar alt" style="height:74%"></div>
+          <div class="bar alt" style="height:86%"></div>
+        </div>
+        <div class="lbl"><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div>
+        <div class="divider"></div>
+        <p class="small muted" style="margin:0">📈 You're growing about <strong style="color:var(--ink)">7.2% / year</strong> — slightly above your "balanced" target of 6%.</p>
+      </div>
+
+      <!-- Goal progress -->
+      <div class="card">
+        <h3>Your goal: A home in 5 years</h3>
+        <span class="small muted">$48,200 saved of $120,000</span>
+        <div class="progress"><span style="width:40%"></span></div>
+        <div class="flex-between mt-16">
+          <span class="small muted">On track for <strong style="color:var(--good)">March 2031</strong></span>
+          <a href="family.html" class="small" style="color:var(--brand)">Adjust goal →</a>
+        </div>
+        <div class="divider"></div>
+        <div class="list">
+          <div class="item">
+            <div class="left"><div class="ico">↗</div><div><div class="name">Auto-save</div><div class="sub">Every Friday</div></div></div>
+            <div class="amt">+$160</div>
+          </div>
+          <div class="item">
+            <div class="left"><div class="ico">★</div><div><div class="name">Round-ups</div><div class="sub">From spending</div></div></div>
+            <div class="amt">+$42</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent -->
+    <div class="card mt-24">
+      <div class="flex-between" style="margin-bottom:8px">
+        <h3>Recent activity</h3>
+        <a href="#" class="small" style="color:var(--brand)">View all →</a>
+      </div>
+      <div class="list">
+        <div class="item">
+          <div class="left"><div class="ico">☕</div><div><div class="name">Blue Bottle Coffee</div><div class="sub">Today · Spending</div></div></div>
+          <div class="amt">– $6.20</div>
+        </div>
+        <div class="item">
+          <div class="left"><div class="ico">💼</div><div><div class="name">Salary deposit</div><div class="sub">Yesterday · Income</div></div></div>
+          <div class="amt" style="color:var(--good)">+ $4,820.00</div>
+        </div>
+        <div class="item">
+          <div class="left"><div class="ico">📈</div><div><div class="name">Index fund purchase</div><div class="sub">Mon · Invest</div></div></div>
+          <div class="amt">– $400.00</div>
+        </div>
+        <div class="item">
+          <div class="left"><div class="ico">🏠</div><div><div class="name">Rent</div><div class="sub">May 1 · Bill</div></div></div>
+          <div class="amt">– $2,100.00</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

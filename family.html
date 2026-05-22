@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Family & Goals — Pivot Money</title>
+<link rel="stylesheet" href="assets/style.css"/>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="logo" href="index.html"><span class="dot"></span> Pivot</a>
+    <nav class="nav">
+      <a href="dashboard.html">◐ Dashboard</a>
+      <a href="advice.html">✦ Advice</a>
+      <a href="family.html" class="active">♡ Family & Goals</a>
+      <a href="security.html">⚿ Security</a>
+      <a href="#">⚙ Settings</a>
+    </nav>
+    <div class="side-foot">Logged in as Jordan L.</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <div>
+        <h1>The Lee family</h1>
+        <div class="sub">Save together — without sharing more than you want to.</div>
+      </div>
+      <button class="btn primary">+ Invite member</button>
+    </div>
+
+    <!-- Members -->
+    <div class="card" style="margin-bottom:24px">
+      <div class="flex-between" style="margin-bottom:14px">
+        <h3>Members</h3>
+        <span class="small muted">Each person controls what they share.</span>
+      </div>
+      <div class="grid cols-3">
+        <div class="member">
+          <div class="av" style="background:#3B82F6">JL</div>
+          <div><div style="font-weight:500;font-size:14px">Jordan (you)</div><div class="small muted">Admin · sharing all</div></div>
+        </div>
+        <div class="member">
+          <div class="av" style="background:#10B981">SL</div>
+          <div><div style="font-weight:500;font-size:14px">Sam</div><div class="small muted">Partner · sharing goals only</div></div>
+        </div>
+        <div class="member">
+          <div class="av" style="background:#f59e0b">MK</div>
+          <div><div style="font-weight:500;font-size:14px">Mia (12)</div><div class="small muted">Child · allowance + savings</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shared goals -->
+    <div class="flex-between" style="margin-bottom:14px">
+      <h2 style="font-size:20px;letter-spacing:-.02em;margin:0">Shared goals</h2>
+      <button class="btn">+ New goal</button>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="goal">
+        <div class="top">
+          <div>
+            <h4>🏡 Down payment on a home</h4>
+            <div class="meta">Jordan + Sam · target March 2031</div>
+          </div>
+          <span class="pill good">On track</span>
+        </div>
+        <div class="flex-between mt-16"><span class="small">$48,200 / $120,000</span><span class="small muted">40%</span></div>
+        <div class="progress"><span style="width:40%"></span></div>
+        <div class="flex-between mt-16">
+          <span class="small muted">Auto-saving $620/mo together</span>
+          <a href="#" class="small" style="color:var(--brand)">Adjust →</a>
+        </div>
+      </div>
+
+      <div class="goal">
+        <div class="top">
+          <div>
+            <h4>✈️ Family trip to Japan</h4>
+            <div class="meta">Everyone · target Summer 2027</div>
+          </div>
+          <span class="pill warn">Behind by $400</span>
+        </div>
+        <div class="flex-between mt-16"><span class="small">$2,100 / $8,000</span><span class="small muted">26%</span></div>
+        <div class="progress"><span style="width:26%;background:linear-gradient(90deg,var(--warn),var(--brand))"></span></div>
+        <div class="flex-between mt-16">
+          <span class="small muted">Suggestion: add $35/mo to catch up</span>
+          <a href="#" class="small" style="color:var(--brand)">Boost →</a>
+        </div>
+      </div>
+
+      <div class="goal">
+        <div class="top">
+          <div>
+            <h4>🎓 Mia's college fund</h4>
+            <div class="meta">529 plan · target 2031</div>
+          </div>
+          <span class="pill good">Ahead</span>
+        </div>
+        <div class="flex-between mt-16"><span class="small">$14,800 / $60,000</span><span class="small muted">24%</span></div>
+        <div class="progress"><span style="width:24%"></span></div>
+        <div class="flex-between mt-16">
+          <span class="small muted">Grandparents contribute $50/mo 💛</span>
+          <a href="#" class="small" style="color:var(--brand)">View →</a>
+        </div>
+      </div>
+
+      <div class="goal">
+        <div class="top">
+          <div>
+            <h4>🛟 Family emergency fund</h4>
+            <div class="meta">3 months expenses · ongoing</div>
+          </div>
+          <span class="pill good">Complete</span>
+        </div>
+        <div class="flex-between mt-16"><span class="small">$15,400 / $15,000</span><span class="small muted">100%</span></div>
+        <div class="progress"><span style="width:100%;background:var(--good)"></span></div>
+        <div class="flex-between mt-16">
+          <span class="small muted">Topped up automatically when used</span>
+          <a href="#" class="small" style="color:var(--brand)">Settings →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity -->
+    <div class="card mt-24">
+      <h3>Family activity</h3>
+      <div class="list mt-16">
+        <div class="item">
+          <div class="left"><div class="ico">💛</div><div><div class="name">Grandma added $50 to Mia's college fund</div><div class="sub">Today</div></div></div>
+          <div class="amt" style="color:var(--good)">+ $50.00</div>
+        </div>
+        <div class="item">
+          <div class="left"><div class="ico">✈️</div><div><div class="name">Sam contributed to Japan trip</div><div class="sub">Yesterday</div></div></div>
+          <div class="amt" style="color:var(--good)">+ $200.00</div>
+        </div>
+        <div class="item">
+          <div class="left"><div class="ico">🎯</div><div><div class="name">You raised the home goal to $120k</div><div class="sub">3 days ago</div></div></div>
+          <div class="amt small muted">Goal updated</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>
